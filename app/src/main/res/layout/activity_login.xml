@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/default_margin"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:background="@color/colorAppTodo"
+                android:paddingStart="@dimen/default_margin">
+
+  <EditText
+      android:id="@+id/login_username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_marginBottom="@dimen/default_margin"
+      android:hint="@string/login_username"
+      android:inputType="text"
+      android:textColor="#5FE0F0"
+      android:textColorHint="#F2F9FA" />
+
+  <EditText
+      android:id="@+id/login_password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/login_username"
+      android:layout_marginBottom="@dimen/default_margin"
+      android:hint="@string/login_password"
+      android:inputType="textPassword"
+      android:textColor="#44CDDF"
+      android:textColorHint="#F2F9FA" />
+
+  <Button
+      android:id="@+id/login_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/login_password"
+      android:background="#27AAB0"
+      android:text="@string/login_button_text"
+      android:textColor="@android:color/white" />
+
+  <Button
+      android:id="@+id/btn_sign_up_login"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/login_button"
+      android:layout_marginLeft="@dimen/default_margin3"
+      android:layout_marginTop="@dimen/default_margin2"
+      android:background="@color/colorPrimary"
+      android:onClick="sign_up"
+      android:text="Cadastrar"
+      android:textColor="@android:color/white" />
+
+  <TextView
+      android:id="@+id/dont_have_txt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/login_button"
+      android:layout_marginLeft="@dimen/default_margin4"
+      android:layout_marginTop="@dimen/default_margin5"
+      android:text="Não tem uma conta?"
+      android:textColor="#EEF3F5" />
+
+  <ImageView
+      android:id="@+id/login_image"
+      android:layout_width="384dp"
+      android:layout_height="229dp"
+      android:layout_above="@+id/login_username"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginStart="0dp"
+      android:layout_marginLeft="0dp"
+      android:layout_marginTop="19dp"
+      android:layout_marginBottom="95dp"
+      app:srcCompat="@mipmap/logo_transparent" />
+
+  <TextView
+      android:id="@+id/welcome_txt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/login_username"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentLeft="true"
+      android:layout_marginStart="56dp"
+      android:layout_marginLeft="56dp"
+      android:layout_marginBottom="38dp"
+      android:background="#00FCFCFC"
+      android:text="Bem vindo Novamente"
+      android:textColor="#FFFFFF"
+      android:textColorLink="#00FAF4F4"
+      android:textSize="25dp"
+      android:textStyle="bold" />
+
+</RelativeLayout>
